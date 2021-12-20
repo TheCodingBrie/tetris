@@ -27,7 +27,7 @@ export default function Tetris() {
 
   const startGame = () => {
     setStage(createStage());
-    setDropTime(1000);
+    setDropTime(1000 / (level + 1) + 200);
     resetPlayer();
     setGameOver(false);
     setScore(0);
